@@ -79,6 +79,7 @@
 		24659F5F23971FA300BAF337 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24659F5D23971FA300BAF337 /* ArticleTableViewCell.swift */; };
 		24659F6023971FA300BAF337 /* ArticleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24659F5E23971FA300BAF337 /* ArticleTableViewCell.xib */; };
 		24659F62239721BE00BAF337 /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24659F61239721BE00BAF337 /* ArticleCell.swift */; };
+		24659F65239728DF00BAF337 /* AlamoFireSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24659F64239728DF00BAF337 /* AlamoFireSource.swift */; };
 		24B18AD1238F3A8800507AD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B18AD0238F3A8800507AD6 /* AppDelegate.swift */; };
 		24B18AD3238F3A8800507AD6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B18AD2238F3A8800507AD6 /* SceneDelegate.swift */; };
 		24B18AD5238F3A8800507AD6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B18AD4238F3A8800507AD6 /* HomeViewController.swift */; };
@@ -185,6 +186,7 @@
 		24659F5D23971FA300BAF337 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
 		24659F5E23971FA300BAF337 /* ArticleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleTableViewCell.xib; sourceTree = "<group>"; };
 		24659F61239721BE00BAF337 /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
+		24659F64239728DF00BAF337 /* AlamoFireSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamoFireSource.swift; sourceTree = "<group>"; };
 		24B18ACD238F3A8800507AD6 /* Kare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24B18AD0238F3A8800507AD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24B18AD2238F3A8800507AD6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -469,6 +471,14 @@
 			path = Article;
 			sourceTree = "<group>";
 		};
+		24659F63239728C900BAF337 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				24659F64239728DF00BAF337 /* AlamoFireSource.swift */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
 		24B18AC4238F3A8800507AD6 = {
 			isa = PBXGroup;
 			children = (
@@ -494,6 +504,7 @@
 		24B18ACF238F3A8800507AD6 /* KarePOC */ = {
 			isa = PBXGroup;
 			children = (
+				24659F63239728C900BAF337 /* ThirdParty */,
 				24B18B0E2390CC8100507AD6 /* Testing */,
 				24B18AD0238F3A8800507AD6 /* AppDelegate.swift */,
 				24B18AD2238F3A8800507AD6 /* SceneDelegate.swift */,
@@ -888,6 +899,7 @@
 				240104232395169D000BF3A1 /* QandAViewController.swift in Sources */,
 				240103E823932D71000BF3A1 /* WaterIntakeTableViewCell.swift in Sources */,
 				245A115823954839002B751A /* AnswerCell.swift in Sources */,
+				24659F65239728DF00BAF337 /* AlamoFireSource.swift in Sources */,
 				24B18AD1238F3A8800507AD6 /* AppDelegate.swift in Sources */,
 				245A113F23953FA3002B751A /* KonnectViewController.swift in Sources */,
 				240103C42391C4BA000BF3A1 /* ReminderCell.swift in Sources */,

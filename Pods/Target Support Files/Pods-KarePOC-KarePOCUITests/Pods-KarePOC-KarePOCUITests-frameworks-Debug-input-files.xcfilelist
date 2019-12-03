@@ -1,4 +1,8 @@
 ${PODS_ROOT}/Target Support Files/Pods-KarePOC-KarePOCUITests/Pods-KarePOC-KarePOCUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework
 ${BUILT_PRODUCTS_DIR}/Charts/Charts.framework
 ${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework
+${BUILT_PRODUCTS_DIR}/ImageSlideshow/ImageSlideshow.framework
 ${BUILT_PRODUCTS_DIR}/SwiftLinkPreview/SwiftLinkPreview.framework
+${BUILT_PRODUCTS_DIR}/SwiftyDrop/SwiftyDrop.framework

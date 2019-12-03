@@ -1,26 +1,45 @@
 PODS:
+  - Alamofire (5.0.0-rc.3)
+  - AlamofireImage (4.0.0-beta.6):
+    - Alamofire (~> 5.0.0-rc.3)
   - Charts (3.4.0):
     - Charts/Core (= 3.4.0)
   - Charts/Core (3.4.0)
+  - ImageSlideshow (1.8.1):
+    - ImageSlideshow/Core (= 1.8.1)
+  - ImageSlideshow/Core (1.8.1)
   - IQKeyboardManagerSwift (6.5.4)
   - SwiftLinkPreview (3.1.0)
+  - SwiftyDrop (4.2.0)
 
 DEPENDENCIES:
+  - Alamofire (= 5.0.0-rc.3)
+  - AlamofireImage (= 4.0.0-beta.6)
   - Charts
+  - ImageSlideshow (~> 1.8.1)
   - IQKeyboardManagerSwift (~> 6.5)
-  - SwiftLinkPreview (~> 3.1.0)
+  - SwiftLinkPreview (~> 3.1)
+  - SwiftyDrop (~> 4.2)
 
 SPEC REPOS:
   trunk:
+    - Alamofire
+    - AlamofireImage
     - Charts
+    - ImageSlideshow
     - IQKeyboardManagerSwift
     - SwiftLinkPreview
+    - SwiftyDrop
 
 SPEC CHECKSUMS:
+  Alamofire: ca8c0de6906873be89d6deec5c8de279e00bf872
+  AlamofireImage: edf3216fd178a89d63e681e609909d7ac98fa3c6
   Charts: 74c9f256eaf0460c0c416522d1cf8c634ea6b286
+  ImageSlideshow: 634865d7d4e96f21e3830a31b51bde768cc94cea
   IQKeyboardManagerSwift: 2dde0fc70110e8eac7ccce2a46fdbec6a850b414
   SwiftLinkPreview: 3d924eeaae8d17410a827a4b37675713af1a0a8a
+  SwiftyDrop: c5b306082dfbd7d6b9c1e569dcdd2ab13306e552
 
-PODFILE CHECKSUM: 566283d114a551d09681d64b5f1936285434cfce
+PODFILE CHECKSUM: 1704cb942fd9d4cab8b7e6a0be0f202e1dabb1eb
 
 COCOAPODS: 1.8.4
