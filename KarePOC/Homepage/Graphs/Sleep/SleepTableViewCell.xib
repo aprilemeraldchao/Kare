@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="272" id="KGk-i7-Jjw" customClass="SleepTableViewCell" customModule="KarePOC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="420" height="272"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="420" height="272"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hrh-aM-pJs">
+                        <rect key="frame" x="15" y="7" width="390" height="258"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Your Sleep" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ac-Hc-dN0">
+                                <rect key="frame" x="0.0" y="0.0" width="88" height="103"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rpk-47-m5c" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="-5" y="108" width="280" height="150"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vVn-ir-hJZ" customClass="PieChartView" customModule="Charts">
+                                <rect key="frame" x="255" y="108" width="150" height="150"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="vVn-ir-hJZ" secondAttribute="height" multiplier="1:1" id="ehi-gN-K7Y"/>
+                                    <constraint firstAttribute="height" constant="150" id="snc-g0-LiU"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rpk-47-m5c" firstAttribute="top" secondItem="6Ac-Hc-dN0" secondAttribute="bottom" constant="5" id="BFI-6s-0U6"/>
+                            <constraint firstItem="6Ac-Hc-dN0" firstAttribute="leading" secondItem="Hrh-aM-pJs" secondAttribute="leading" id="EQ0-sE-ZGm"/>
+                            <constraint firstItem="vVn-ir-hJZ" firstAttribute="top" secondItem="rpk-47-m5c" secondAttribute="top" id="LuE-gd-HRb"/>
+                            <constraint firstItem="6Ac-Hc-dN0" firstAttribute="top" secondItem="Hrh-aM-pJs" secondAttribute="top" id="RjL-at-nR5"/>
+                            <constraint firstAttribute="trailing" secondItem="vVn-ir-hJZ" secondAttribute="trailing" constant="-15" id="XpR-Pu-Yi5"/>
+                            <constraint firstItem="vVn-ir-hJZ" firstAttribute="height" secondItem="rpk-47-m5c" secondAttribute="height" id="Y4u-2g-L2Z"/>
+                            <constraint firstItem="vVn-ir-hJZ" firstAttribute="leading" secondItem="rpk-47-m5c" secondAttribute="trailing" constant="-20" id="a0h-8r-Ck5"/>
+                            <constraint firstAttribute="bottom" secondItem="rpk-47-m5c" secondAttribute="bottom" id="apR-1Z-CTU"/>
+                            <constraint firstItem="rpk-47-m5c" firstAttribute="leading" secondItem="Hrh-aM-pJs" secondAttribute="leading" constant="-5" id="dGU-aP-T0j"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.95577281709999995" green="0.65842884779999999" blue="0.65177518130000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="Hrh-aM-pJs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="1Sh-7a-6wr"/>
+                    <constraint firstAttribute="trailing" secondItem="Hrh-aM-pJs" secondAttribute="trailing" constant="15" id="2J6-cB-l54"/>
+                    <constraint firstItem="Hrh-aM-pJs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="HiD-je-ply"/>
+                    <constraint firstAttribute="bottom" secondItem="Hrh-aM-pJs" secondAttribute="bottom" constant="7" id="dBf-hv-LGn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="sleepLineChart" destination="rpk-47-m5c" id="pwp-SY-12t"/>
+                <outlet property="sleepPieChart" destination="vVn-ir-hJZ" id="BHj-de-P4K"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="140.625"/>
+        </tableViewCell>
+    </objects>
+</document>

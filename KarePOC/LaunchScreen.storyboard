@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="loading.." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wTM-5L-BYw">
+                                <rect key="frame" x="170" y="497" width="74" height="40"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="25"/>
+                                <color key="textColor" name="KareDarkPink"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_0070.png" translatesAutoresizingMaskIntoConstraints="NO" id="ST0-c2-EdC">
+                                <rect key="frame" x="0.0" y="-46" width="414" height="818"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" name="KareOrange"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ST0-c2-EdC" secondAttribute="bottom" constant="90" id="6Tl-s1-hXj"/>
+                            <constraint firstItem="ST0-c2-EdC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-90" id="MrR-aF-cCU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ST0-c2-EdC" secondAttribute="trailing" id="UHX-8l-GvE"/>
+                            <constraint firstItem="wTM-5L-BYw" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="VYy-U1-gLI"/>
+                            <constraint firstItem="ST0-c2-EdC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZWp-pV-xV7"/>
+                            <constraint firstItem="wTM-5L-BYw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="453" id="cNd-sj-avb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="IMG_0070.png" width="1536" height="864"/>
+        <namedColor name="KareDarkPink">
+            <color red="0.88400000333786011" green="0.35899999737739563" blue="0.34700000286102295" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="KareOrange">
+            <color red="0.91200000047683716" green="0.82400000095367432" blue="0.76999998092651367" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

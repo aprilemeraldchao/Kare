@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="337" id="KGk-i7-Jjw" customClass="AskFeelingTableViewCell" customModule="KarePOC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="447" height="337"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="447" height="337"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rjO-xh-09w">
+                        <rect key="frame" x="15" y="7" width="417" height="323"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Kcn-TV-6Si">
+                                <rect key="frame" x="0.0" y="0.0" width="330" height="323"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How are you feeling?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sPH-Uk-lOd">
+                                        <rect key="frame" x="0.0" y="0.0" width="195.5" height="38.5"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="stm-Hb-VRe">
+                                        <rect key="frame" x="0.0" y="263" width="330" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idD-XW-V6f">
+                                                <rect key="frame" x="0.0" y="0.0" width="54" height="60"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="iBp-UB-K1k"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <state key="normal" title="🙂">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="feeling1Clicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="qWk-iK-sCY"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lcy-pn-6U7">
+                                                <rect key="frame" x="69" y="0.0" width="54" height="60"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="TcS-SA-9L4"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <state key="normal" title="😐">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="feeling2Clicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="mCG-oc-111"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JcE-G9-E9g">
+                                                <rect key="frame" x="138" y="0.0" width="54" height="60"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="3sC-pO-d8X"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <state key="normal" title="☹️">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="feeling3Clicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Vue-5w-zBd"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dVg-ow-rET">
+                                                <rect key="frame" x="207" y="0.0" width="54" height="60"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="b1U-S7-Dks"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <state key="normal" title="😖">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="feeling4Clicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="gzc-es-EGA"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gc1-nM-Tzl">
+                                                <rect key="frame" x="276" y="0.0" width="54" height="60"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="IZF-ov-l7I"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                                <state key="normal" title="😭">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="feeling5Clicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="qty-5s-cLi"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.95577281709999995" green="0.65842884779999999" blue="0.65177518130000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </stackView>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTV-1r-5LM">
+                                        <rect key="frame" x="0.0" y="323" width="146" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="16"/>
+                                        <state key="normal" title="Continue your checkup...">
+                                            <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="continueClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="JbQ-lg-tXd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Kcn-TV-6Si" secondAttribute="bottom" id="Pgi-RT-YvD"/>
+                            <constraint firstItem="Kcn-TV-6Si" firstAttribute="top" secondItem="rjO-xh-09w" secondAttribute="top" id="bqK-4K-Gwg"/>
+                            <constraint firstItem="Kcn-TV-6Si" firstAttribute="leading" secondItem="rjO-xh-09w" secondAttribute="leading" id="nX0-7m-KaW"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.95577281709999995" green="0.65842884779999999" blue="0.65177518130000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="rjO-xh-09w" secondAttribute="bottom" constant="7" id="6Px-tr-89P"/>
+                    <constraint firstAttribute="trailing" secondItem="rjO-xh-09w" secondAttribute="trailing" constant="15" id="EW0-Yr-bwR"/>
+                    <constraint firstItem="rjO-xh-09w" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="GSx-yx-lzZ"/>
+                    <constraint firstItem="rjO-xh-09w" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="NoC-Ja-pRS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="continueButton" destination="eTV-1r-5LM" id="wDu-0E-Qar"/>
+                <outlet property="feeling1Button" destination="idD-XW-V6f" id="Guh-XC-Oy1"/>
+                <outlet property="feeling2Button" destination="Lcy-pn-6U7" id="R02-oV-tFG"/>
+                <outlet property="feeling3Button" destination="JcE-G9-E9g" id="WoO-CL-vMZ"/>
+                <outlet property="feeling4Button" destination="dVg-ow-rET" id="Cmm-4c-Tdq"/>
+                <outlet property="feeling5Button" destination="Gc1-nM-Tzl" id="lJh-RD-lJa"/>
+            </connections>
+            <point key="canvasLocation" x="217" y="176"/>
+        </tableViewCell>
+    </objects>
+</document>

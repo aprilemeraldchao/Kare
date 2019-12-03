@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="265" id="KGk-i7-Jjw" customClass="ReminderTableViewCell" customModule="KarePOC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="363" height="265"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="363" height="265"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WOk-VO-QZQ">
+                        <rect key="frame" x="15" y="7" width="338" height="251"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tips/Reminders" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tQs-Ze-LbQ">
+                                <rect key="frame" x="0.0" y="5" width="146" height="38.5"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You currently don't have any tips/reminders" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="px0-p0-eFs">
+                                <rect key="frame" x="5" y="48.5" width="230" height="23"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BM7-Db-Dyv" customClass="ChildTableViewFix" customModule="KarePOC" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="48.5" width="330" height="197.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tQs-Ze-LbQ" firstAttribute="top" secondItem="WOk-VO-QZQ" secondAttribute="top" constant="5" id="1WW-DI-H8u"/>
+                            <constraint firstItem="BM7-Db-Dyv" firstAttribute="leading" secondItem="tQs-Ze-LbQ" secondAttribute="leading" id="3Li-ui-rQu"/>
+                            <constraint firstItem="BM7-Db-Dyv" firstAttribute="trailing" secondItem="WOk-VO-QZQ" secondAttribute="trailingMargin" id="D7e-Bn-Dbc"/>
+                            <constraint firstAttribute="bottom" secondItem="BM7-Db-Dyv" secondAttribute="bottom" constant="5" id="IrG-NX-c1c"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="px0-p0-eFs" secondAttribute="bottom" constant="5" id="Uvb-Wo-hqV"/>
+                            <constraint firstItem="px0-p0-eFs" firstAttribute="leading" secondItem="tQs-Ze-LbQ" secondAttribute="leading" constant="5" id="dUm-Bl-Hit"/>
+                            <constraint firstItem="BM7-Db-Dyv" firstAttribute="top" secondItem="tQs-Ze-LbQ" secondAttribute="bottom" constant="5" id="mY7-zJ-Bke"/>
+                            <constraint firstItem="px0-p0-eFs" firstAttribute="top" secondItem="tQs-Ze-LbQ" secondAttribute="bottom" constant="5" id="x12-wa-ZOf"/>
+                            <constraint firstItem="tQs-Ze-LbQ" firstAttribute="leading" secondItem="WOk-VO-QZQ" secondAttribute="leading" id="x4I-71-zMy"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.95577281709999995" green="0.65842884779999999" blue="0.65177518130000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="WOk-VO-QZQ" secondAttribute="trailing" constant="10" id="JBm-l5-nM2"/>
+                    <constraint firstItem="WOk-VO-QZQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="gi7-EB-jyt"/>
+                    <constraint firstItem="WOk-VO-QZQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="uR8-Wm-bpX"/>
+                    <constraint firstAttribute="bottom" secondItem="WOk-VO-QZQ" secondAttribute="bottom" constant="7" id="xX2-Y4-u3e"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="noReminderLabel" destination="px0-p0-eFs" id="LQf-3s-iBI"/>
+                <outlet property="reminderTableView" destination="BM7-Db-Dyv" id="UNq-TP-h6V"/>
+            </connections>
+            <point key="canvasLocation" x="31.159420289855074" y="49.888392857142854"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="250" id="KGk-i7-Jjw" customClass="WaterIntakeTableViewCell" customModule="KarePOC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="450" height="250"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="450" height="250"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NDL-wf-ZsW">
+                        <rect key="frame" x="15" y="7" width="420" height="236"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Your Water Intake" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehI-24-lGc">
+                                <rect key="frame" x="0.0" y="0.0" width="147" height="81"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4gm-DR-fnu" customClass="PieChartView" customModule="Charts">
+                                <rect key="frame" x="-15" y="86" width="150" height="150"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="xFu-bZ-UQc"/>
+                                    <constraint firstAttribute="width" secondItem="4gm-DR-fnu" secondAttribute="height" multiplier="1:1" id="xG0-ek-vVX"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kF7-rd-o2s" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="115" y="86" width="310" height="150"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="kF7-rd-o2s" secondAttribute="trailing" constant="-5" id="0N4-gL-CcJ"/>
+                            <constraint firstItem="4gm-DR-fnu" firstAttribute="leading" secondItem="ehI-24-lGc" secondAttribute="leading" constant="-15" id="1iT-YA-sPN"/>
+                            <constraint firstItem="ehI-24-lGc" firstAttribute="leading" secondItem="NDL-wf-ZsW" secondAttribute="leading" id="71j-ER-zFS"/>
+                            <constraint firstItem="4gm-DR-fnu" firstAttribute="height" secondItem="kF7-rd-o2s" secondAttribute="height" id="CMw-OS-zGg"/>
+                            <constraint firstAttribute="bottom" secondItem="4gm-DR-fnu" secondAttribute="bottom" id="MQ5-KO-hSX"/>
+                            <constraint firstItem="kF7-rd-o2s" firstAttribute="leading" secondItem="4gm-DR-fnu" secondAttribute="trailing" constant="-20" id="Mwx-nv-aPa"/>
+                            <constraint firstItem="4gm-DR-fnu" firstAttribute="top" secondItem="ehI-24-lGc" secondAttribute="bottom" constant="5" id="O2T-vW-Fd4"/>
+                            <constraint firstItem="ehI-24-lGc" firstAttribute="top" secondItem="NDL-wf-ZsW" secondAttribute="top" id="ejO-QN-t0S"/>
+                            <constraint firstItem="4gm-DR-fnu" firstAttribute="top" secondItem="kF7-rd-o2s" secondAttribute="top" id="ktC-lL-T0M"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.95577281709999995" green="0.65842884779999999" blue="0.65177518130000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="NDL-wf-ZsW" secondAttribute="bottom" constant="7" id="6li-lT-LNB"/>
+                    <constraint firstAttribute="trailing" secondItem="NDL-wf-ZsW" secondAttribute="trailing" constant="15" id="Cod-V1-kG6"/>
+                    <constraint firstItem="NDL-wf-ZsW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="DIG-8L-frb"/>
+                    <constraint firstItem="NDL-wf-ZsW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="yDR-XJ-fAu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="waterLineChart" destination="kF7-rd-o2s" id="p1b-m7-nEq"/>
+                <outlet property="waterPieChart" destination="4gm-DR-fnu" id="HSH-qR-ndO"/>
+            </connections>
+            <point key="canvasLocation" x="160.86956521739131" y="132.58928571428572"/>
+        </tableViewCell>
+    </objects>
+</document>

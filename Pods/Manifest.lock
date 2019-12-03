@@ -1,0 +1,26 @@
+PODS:
+  - Charts (3.4.0):
+    - Charts/Core (= 3.4.0)
+  - Charts/Core (3.4.0)
+  - IQKeyboardManagerSwift (6.5.4)
+  - SwiftLinkPreview (3.1.0)
+
+DEPENDENCIES:
+  - Charts
+  - IQKeyboardManagerSwift (~> 6.5)
+  - SwiftLinkPreview (~> 3.1.0)
+
+SPEC REPOS:
+  trunk:
+    - Charts
+    - IQKeyboardManagerSwift
+    - SwiftLinkPreview
+
+SPEC CHECKSUMS:
+  Charts: 74c9f256eaf0460c0c416522d1cf8c634ea6b286
+  IQKeyboardManagerSwift: 2dde0fc70110e8eac7ccce2a46fdbec6a850b414
+  SwiftLinkPreview: 3d924eeaae8d17410a827a4b37675713af1a0a8a
+
+PODFILE CHECKSUM: 566283d114a551d09681d64b5f1936285434cfce
+
+COCOAPODS: 1.8.4

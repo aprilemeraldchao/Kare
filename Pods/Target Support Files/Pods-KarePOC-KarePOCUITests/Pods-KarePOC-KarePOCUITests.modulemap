@@ -1,0 +1,6 @@
+framework module Pods_KarePOC_KarePOCUITests {
+  umbrella header "Pods-KarePOC-KarePOCUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
