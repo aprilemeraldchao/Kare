@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import SwiftLinkPreview
 
 class SocializeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, AskQuestionProtocol {
     
     @IBOutlet weak var socializeTableView: UITableView!
+    private var result = Response()
+    private let slp = SwiftLinkPreview(cache: InMemoryCache())
     
     override func viewDidLoad() {
         let cellNib = UINib(nibName: "QandATableViewCell", bundle: nil)
@@ -65,9 +68,8 @@ class SocializeViewController: UIViewController, UITableViewDelegate, UITableVie
             cell.cellDelegate = self
             return cell
         default:
-            let cell = socializeTableView.dequeueReusableCell(withIdentifier: "askQuestionCell", for: indexPath) as! AskQuestionTableViewCell
-            cell.set(cell: cellContent as! AskQuestionCell)
-            cell.cellDelegate = self
+            let cell = socializeTableView.dequeueReusableCell(withIdentifier: "articleCell", for: indexPath) as! ArticleTableViewCell
+            cell.set(cell: cellContent as! ArticleCell)
             return cell
         }
     }

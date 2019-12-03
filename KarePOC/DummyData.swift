@@ -132,7 +132,8 @@ class DummyData{
     
     static var socials = [
         AskQuestionCell(image: DummyData.profilePic),
-        QandACell(username: DummyData.username, question: "question 1", image: DummyData.profilePic,anon:false)
+        QandACell(username: DummyData.username, question: "question 1", image: DummyData.profilePic,anon:false),
+        ArticleCell(url: "https://www.psychologytoday.com/us/blog/click-here-happiness/201812/self-care-12-ways-take-better-care-yourself")
     ]
     
     static func addAnswer(_ answer: AnswerCell){

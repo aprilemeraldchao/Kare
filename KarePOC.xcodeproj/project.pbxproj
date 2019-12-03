@@ -76,6 +76,9 @@
 		24659F592396441300BAF337 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24659F572396441300BAF337 /* Main.storyboard */; };
 		24659F5A2396441300BAF337 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24659F582396441300BAF337 /* LaunchScreen.storyboard */; };
 		24659F5B2396471200BAF337 /* AddCustomInputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245A11682395BF40002B751A /* AddCustomInputTableViewCell.swift */; };
+		24659F5F23971FA300BAF337 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24659F5D23971FA300BAF337 /* ArticleTableViewCell.swift */; };
+		24659F6023971FA300BAF337 /* ArticleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24659F5E23971FA300BAF337 /* ArticleTableViewCell.xib */; };
+		24659F62239721BE00BAF337 /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24659F61239721BE00BAF337 /* ArticleCell.swift */; };
 		24B18AD1238F3A8800507AD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B18AD0238F3A8800507AD6 /* AppDelegate.swift */; };
 		24B18AD3238F3A8800507AD6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B18AD2238F3A8800507AD6 /* SceneDelegate.swift */; };
 		24B18AD5238F3A8800507AD6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B18AD4238F3A8800507AD6 /* HomeViewController.swift */; };
@@ -179,6 +182,9 @@
 		245A116E2395C809002B751A /* AddCustomInputCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCustomInputCell.swift; sourceTree = "<group>"; };
 		24659F572396441300BAF337 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		24659F582396441300BAF337 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		24659F5D23971FA300BAF337 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
+		24659F5E23971FA300BAF337 /* ArticleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleTableViewCell.xib; sourceTree = "<group>"; };
+		24659F61239721BE00BAF337 /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
 		24B18ACD238F3A8800507AD6 /* Kare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24B18AD0238F3A8800507AD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24B18AD2238F3A8800507AD6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -353,6 +359,7 @@
 				2401041323950C8E000BF3A1 /* SocializeCell.swift */,
 				2401042B239527B5000BF3A1 /* AskQuestion */,
 				2401041123950C6F000BF3A1 /* QandA */,
+				24659F5C23971F3B00BAF337 /* Article */,
 			);
 			path = "Socialize page";
 			sourceTree = "<group>";
@@ -450,6 +457,16 @@
 				245A116E2395C809002B751A /* AddCustomInputCell.swift */,
 			);
 			path = AddCustomInput;
+			sourceTree = "<group>";
+		};
+		24659F5C23971F3B00BAF337 /* Article */ = {
+			isa = PBXGroup;
+			children = (
+				24659F5D23971FA300BAF337 /* ArticleTableViewCell.swift */,
+				24659F61239721BE00BAF337 /* ArticleCell.swift */,
+				24659F5E23971FA300BAF337 /* ArticleTableViewCell.xib */,
+			);
+			path = Article;
 			sourceTree = "<group>";
 		};
 		24B18AC4238F3A8800507AD6 = {
@@ -719,6 +736,7 @@
 				240104072394DD5D000BF3A1 /* NumberInputsTableViewCell.xib in Resources */,
 				24B18B052390BC8E00507AD6 /* HomeTableViewCell.xib in Resources */,
 				24B18B1B2390D6B700507AD6 /* WelcomeTableViewCell.xib in Resources */,
+				24659F6023971FA300BAF337 /* ArticleTableViewCell.xib in Resources */,
 				24B18B092390C07500507AD6 /* Home2TableViewCell.xib in Resources */,
 				245A11502395437C002B751A /* LeftMessageTableViewCell.xib in Resources */,
 				245A115423954389002B751A /* RightMessageTableViewCell.xib in Resources */,
@@ -885,6 +903,7 @@
 				240103EF23933281000BF3A1 /* WaterIntakeCell.swift in Sources */,
 				240103F123933291000BF3A1 /* SleepCell.swift in Sources */,
 				240104062394DD5D000BF3A1 /* NumberInputsTableViewCell.swift in Sources */,
+				24659F62239721BE00BAF337 /* ArticleCell.swift in Sources */,
 				240103CC23921AD9000BF3A1 /* SleepSubReminderCell.swift in Sources */,
 				24396EEE2390EE0D00197DD1 /* DummyData.swift in Sources */,
 				240103CA23921A2E000BF3A1 /* ReminderTableViewCell.swift in Sources */,
@@ -897,6 +916,7 @@
 				2401040C2394ED1F000BF3A1 /* BooleanInputsCell.swift in Sources */,
 				240103C22391C294000BF3A1 /* SubReminderCell.swift in Sources */,
 				24396EF02390EF6200197DD1 /* AskFeelingCell.swift in Sources */,
+				24659F5F23971FA300BAF337 /* ArticleTableViewCell.swift in Sources */,
 				240103E52392FAAF000BF3A1 /* WeeklyAnalysisTableViewCell.swift in Sources */,
 				24B18AD3238F3A8800507AD6 /* SceneDelegate.swift in Sources */,
 				245A116D2395C774002B751A /* AddCustomInputProtocol.swift in Sources */,

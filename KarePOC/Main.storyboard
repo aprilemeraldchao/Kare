@@ -11,7 +11,7 @@
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="HomeViewController" customModule="KarePOC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="HomeViewController" customModule="Kare" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -72,7 +72,7 @@
         <!--Socialize View Controller-->
         <scene sceneID="eww-6J-wUD">
             <objects>
-                <viewController id="qb6-uK-Z6B" customClass="SocializeViewController" customModule="KarePOC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qb6-uK-Z6B" customClass="SocializeViewController" customModule="Kare" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RhY-Xv-3FS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -132,7 +132,7 @@
         <!--Konnect View Controller-->
         <scene sceneID="JVi-fv-Q2r">
             <objects>
-                <viewController id="SSG-lQ-P5E" customClass="KonnectViewController" customModule="KarePOC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="SSG-lQ-P5E" customClass="KonnectViewController" customModule="Kare" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HMm-tS-cAd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -218,7 +218,7 @@
         <!--Input View Controller-->
         <scene sceneID="qgB-oB-SWS">
             <objects>
-                <viewController id="Clh-bO-64S" customClass="InputViewController" customModule="KarePOC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Clh-bO-64S" customClass="InputViewController" customModule="Kare" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pDz-UW-b1x">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -279,7 +279,7 @@
         <!--QandA View Controller-->
         <scene sceneID="22Y-eM-4YI">
             <objects>
-                <viewController title="QandA View Controller" id="jqu-Zm-x4B" customClass="QandAViewController" customModule="KarePOC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="QandA View Controller" id="jqu-Zm-x4B" customClass="QandAViewController" customModule="Kare" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZcF-CK-nxr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
