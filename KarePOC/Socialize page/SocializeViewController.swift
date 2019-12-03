@@ -82,8 +82,7 @@ class SocializeViewController: UIViewController, UITableViewDelegate, UITableVie
             performSegue(withIdentifier: "socializeToQandA", sender: self)
             break
         case "article":
-            DummyData.curPage = indexPath.row
-            performSegue(withIdentifier: "socializeToArticle", sender: self)
+            UIApplication.shared.open(URL(string: (cellContent as! ArticleCell).url)!, options: [:], completionHandler: nil)
             break
         default:
             break
