@@ -22,8 +22,17 @@ class DoctorCell{
     
     func addMessage(_ message: MessageCell){
         messages.insert(message, at: 0)
-        let response = MessageCell(type: "left", content: "response")
-        messages.insert(response, at: 0)
+        var resp = ""
+        for (k,v) in DummyData.responses{
+            if(message.content.contains(k)){
+                resp = v
+                break
+            }
+        }
+        if(resp != ""){
+            let response = MessageCell(type: "left", content: resp)
+            messages.insert(response, at: 0)
+        }
         DummyData.updateDoctor(doctorName: doctorName,messages: messages)
     }
 }

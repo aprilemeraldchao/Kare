@@ -17,11 +17,12 @@ class QandACell: SocializeCell{
     
     init(username:String,question:String,image:String,answers:[AnswerCell] = [],anon:Bool){
         self.username = username
+        self.profilePic = UIImage(named: image) ?? UIImage(named: "defaultProfile")!
         if anon{
             self.username = "Anonymous"
+            self.profilePic = UIImage(named: "defaultProfile")!
         }
         self.question = question
-        self.profilePic = UIImage(named: image) ?? UIImage(named: "defaultProfile")!
         self.answers = answers
         
         super.init(type: "qandA")

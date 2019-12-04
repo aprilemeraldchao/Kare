@@ -36,8 +36,10 @@ class AddCustomInputTableViewCell: UITableViewCell, UITextViewDelegate {
     }
     
     @IBAction func addReminderClicked(_ sender: Any) {
-        addReminder()
-        cellDelegate?.updateInputs()
+        if(textView.text != ""){
+            addReminder()
+            cellDelegate?.updateInputs()
+        }
     }
     
     func addReminder(){

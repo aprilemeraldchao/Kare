@@ -66,14 +66,14 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Prh-cg-38v">
-                                <rect key="frame" x="0.0" y="65" width="399" height="300"/>
+                                <rect key="frame" x="0.0" y="65" width="399" height="400"/>
                                 <color key="backgroundColor" red="1" green="0.99997037649999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="cki-I8-KHG"/>
+                                    <constraint firstAttribute="height" constant="400" id="cki-I8-KHG"/>
                                 </constraints>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LxT-J4-Ivf">
-                                <rect key="frame" x="0.0" y="365" width="399" height="422"/>
+                                <rect key="frame" x="0.0" y="465" width="399" height="322"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cyc-xs-grp">
                                         <rect key="frame" x="338" y="10" width="51" height="32"/>

@@ -36,7 +36,10 @@ class NumberInputsTableViewCell: UITableViewCell {
     }
     
     @IBAction func stepperAction(_ sender: UIStepper) {
-        numLabel.text = "\(Int(sender.value))"
-        cell.update(num: Int(sender.value))
+        if((questionLabel.text?.contains("sleep"))! && sender.value > 24){
+        }else{
+            numLabel.text = "\(Int(sender.value))"
+            cell.update(num: Int(sender.value))
+        }
     }
 }

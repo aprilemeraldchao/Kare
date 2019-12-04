@@ -398,27 +398,45 @@
                                         </constraints>
                                     </view>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iIw-Nm-bNr">
-                                        <rect key="frame" x="10" y="186" width="355" height="513"/>
+                                        <rect key="frame" x="10" y="186" width="355" height="449"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6b7-Q0-nDh">
+                                        <rect key="frame" x="152.66666666666666" y="642" width="70" height="38"/>
+                                        <color key="backgroundColor" name="KareDarkPink"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="JNG-Zg-uEd"/>
+                                            <constraint firstAttribute="width" constant="70" id="yri-S7-OW6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="17"/>
+                                        <state key="normal" title="Back">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="backClicked:" destination="jqu-Zm-x4B" eventType="touchUpInside" id="lfq-gz-DmX"/>
+                                            <action selector="commentClicked:" destination="jqu-Zm-x4B" eventType="touchUpInside" id="VZ5-nz-aOK"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" name="KarePink"/>
                                 <constraints>
                                     <constraint firstItem="knJ-E3-yEH" firstAttribute="leading" secondItem="me2-NK-9t3" secondAttribute="leading" constant="10" id="6Zo-fo-jrj"/>
                                     <constraint firstAttribute="trailing" secondItem="knJ-E3-yEH" secondAttribute="trailing" constant="10" id="FiR-QT-Zvu"/>
                                     <constraint firstItem="knJ-E3-yEH" firstAttribute="top" secondItem="me2-NK-9t3" secondAttribute="top" constant="10" id="Gyj-lx-hF5"/>
+                                    <constraint firstItem="6b7-Q0-nDh" firstAttribute="top" secondItem="iIw-Nm-bNr" secondAttribute="bottom" constant="7" id="HCc-bU-DQL"/>
                                     <constraint firstItem="iIw-Nm-bNr" firstAttribute="width" secondItem="knJ-E3-yEH" secondAttribute="width" id="PUc-8X-ufE"/>
                                     <constraint firstItem="iIw-Nm-bNr" firstAttribute="centerX" secondItem="knJ-E3-yEH" secondAttribute="centerX" id="UJM-j3-0y3"/>
                                     <constraint firstItem="iIw-Nm-bNr" firstAttribute="top" secondItem="gHE-FH-yjr" secondAttribute="bottom" constant="10" id="We6-sk-O3y"/>
                                     <constraint firstItem="iIw-Nm-bNr" firstAttribute="centerX" secondItem="gHE-FH-yjr" secondAttribute="centerX" id="Wht-Oi-bj3"/>
                                     <constraint firstItem="gHE-FH-yjr" firstAttribute="width" secondItem="knJ-E3-yEH" secondAttribute="width" id="fq4-Gl-7G5"/>
-                                    <constraint firstAttribute="bottom" secondItem="iIw-Nm-bNr" secondAttribute="bottom" id="gue-Kr-MtA"/>
                                     <constraint firstItem="gHE-FH-yjr" firstAttribute="top" secondItem="knJ-E3-yEH" secondAttribute="bottom" constant="10" id="vRM-GD-w4e"/>
+                                    <constraint firstItem="6b7-Q0-nDh" firstAttribute="centerX" secondItem="me2-NK-9t3" secondAttribute="centerX" id="wTB-Yu-gFU"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="6b7-Q0-nDh" firstAttribute="bottom" secondItem="s6m-It-ZDP" secondAttribute="bottom" constant="15" id="GLT-bO-MWI"/>
                             <constraint firstItem="wfE-Fx-pKi" firstAttribute="top" secondItem="d8z-1o-e2H" secondAttribute="bottom" constant="1" id="Ngg-oi-9uN"/>
                             <constraint firstItem="wfE-Fx-pKi" firstAttribute="leading" secondItem="s6m-It-ZDP" secondAttribute="leading" id="YBp-xp-xnj"/>
                             <constraint firstItem="d8z-1o-e2H" firstAttribute="leading" secondItem="s6m-It-ZDP" secondAttribute="leading" id="fnc-8t-KCT"/>
@@ -435,6 +453,7 @@
                     <navigationItem key="navigationItem" id="7yI-it-Efz"/>
                     <connections>
                         <outlet property="answersTableView" destination="iIw-Nm-bNr" id="Aew-Gh-JGe"/>
+                        <outlet property="backButton" destination="6b7-Q0-nDh" id="hj0-Mq-LjD"/>
                         <outlet property="commentButton" destination="rpQ-eb-516" id="uyJ-HC-Rnd"/>
                         <outlet property="commentContainerView" destination="gHE-FH-yjr" id="Wmx-Ld-hRO"/>
                         <outlet property="commentTextField" destination="fSn-GN-0GO" id="QEw-QK-efc"/>
@@ -454,6 +473,9 @@
     </scenes>
     <resources>
         <image name="Screen Shot 2019-11-27 at 3.22.29 PM" width="377" height="92"/>
+        <namedColor name="KareDarkPink">
+            <color red="0.88400000333786011" green="0.35899999737739563" blue="0.34700000286102295" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="KarePink">
             <color red="0.95399999618530273" green="0.63700002431869507" blue="0.63300001621246338" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

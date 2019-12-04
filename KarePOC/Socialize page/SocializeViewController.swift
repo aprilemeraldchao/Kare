@@ -9,7 +9,7 @@
 import UIKit
 import SwiftLinkPreview
 
-class SocializeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, AskQuestionProtocol {
+class SocializeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, AskQuestionProtocol, ArticleProtocol {
     
     @IBOutlet weak var socializeTableView: UITableView!
     private var result = Response()
@@ -69,7 +69,9 @@ class SocializeViewController: UIViewController, UITableViewDelegate, UITableVie
             return cell
         default:
             let cell = socializeTableView.dequeueReusableCell(withIdentifier: "articleCell", for: indexPath) as! ArticleTableViewCell
-            cell.set(cell: cellContent as! ArticleCell)
+            let content = cellContent as! ArticleCell
+            content.cellDelegate = self
+            cell.set(cell: content)
             return cell
         }
     }
@@ -82,7 +84,9 @@ class SocializeViewController: UIViewController, UITableViewDelegate, UITableVie
             performSegue(withIdentifier: "socializeToQandA", sender: self)
             break
         case "article":
-            UIApplication.shared.open(URL(string: (cellContent as! ArticleCell).url)!, options: [:], completionHandler: nil)
+            let content = cellContent as! ArticleCell
+            content.cellDelegate = self
+            UIApplication.shared.open(URL(string: (content).url)!, options: [:], completionHandler: nil)
             break
         default:
             break
@@ -90,7 +94,11 @@ class SocializeViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     func add(question: QandACell) {
-        DummyData.socials.append(question)
+        DummyData.socials.insert(question,at:1)
+        socializeTableView.reloadData()
+    }
+    
+    func updateArticle() {
         socializeTableView.reloadData()
     }
 }
