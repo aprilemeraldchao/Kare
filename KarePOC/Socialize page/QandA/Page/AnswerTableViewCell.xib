@@ -9,7 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="371" id="KGk-i7-Jjw" customClass="AnswerTableViewCell" customModule="KarePOC" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="371" id="KGk-i7-Jjw" customClass="AnswerTableViewCell" customModule="Kare" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="565" height="371"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -54,6 +54,7 @@
                         </constraints>
                     </view>
                 </subviews>
+                <color key="backgroundColor" red="1" green="0.99997037649999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="YjM-wq-kPR" secondAttribute="bottom" constant="7" id="1BZ-dp-3y2"/>
                     <constraint firstItem="YjM-wq-kPR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="2gd-7z-qCF"/>
