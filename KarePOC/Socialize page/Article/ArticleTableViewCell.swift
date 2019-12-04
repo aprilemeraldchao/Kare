@@ -19,6 +19,7 @@ class ArticleTableViewCell: UITableViewCell {
     
     private var result = Response()
     private let slp = SwiftLinkPreview(cache: InMemoryCache())
+    private let placeholderImages = [ImageSource(image: UIImage(named: "Placeholder")!)]
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -57,68 +58,122 @@ class ArticleTableViewCell: UITableViewCell {
         
         func setData() {
             
-//            if let value = self.result.images {
-//
-//                if !value.isEmpty {
-//
-//                    var images: [InputSource] = []
-//                    for image in value {
-//
-//                        if let source = AlamofireSource(urlString: image) {
-//
-//                            images.append(source)
-//
-//                        }
-//
-//                    }
-//
-//                    self.setImage(images: images)
-//
-//                } else {
-//
-//                    self.setImage(image: self.result.image)
-//
-//                }
-//
-//            } else {
-//
-//                self.setImage(image: self.result.image)
-//
-//            }
-//
-//            if let value: String = self.result.title {
-//
+            if let value = self.result.images {
+                
+                if !value.isEmpty {
+                    
+                    var images: [InputSource] = []
+                    for image in value {
+                        
+                        if let source = AlamofireSource(urlString: image) {
+                            
+                            images.append(source)
+                            
+                        }
+                        
+                    }
+                    
+                    setImage(images: images)
+                    
+                } else {
+                    
+                    setImage(image: self.result.image)
+                    
+                }
+                
+            } else {
+                
+                setImage(image: self.result.image)
+                
+            }
+            
+            if let value: String = self.result.title {
+                
 //                self.previewTitle?.text = value.isEmpty ? "No title" : value
-//
-//            } else {
-//
+                
+            } else {
+                
 //                self.previewTitle?.text = "No title"
-//
-//            }
-//
-//            if let value: String = self.result.canonicalUrl {
-//
+                
+            }
+            
+            if let value: String = self.result.canonicalUrl {
+                
 //                self.previewCanonicalUrl?.text = value
-//
-//            }
-//
-//            if let value: String = self.result.description {
-//
+                
+            }
+            
+            if let value: String = self.result.description {
+                
 //                self.previewDescription?.text = value.isEmpty ? "No description" : value
-//
-//            } else {
-//
+                
+            } else {
+                
 //                self.previewTitle?.text = "No description"
-//
-//            }
-//
-//            if let value: String = self.result.icon, let url = URL(string: value) {
+                
+            }
+            
+            if let value: String = self.result.icon, let url = URL(string: value) {
 //                self.favicon?.af_setImage(withURL: url)
-//            }
-//
-//            self.showHideAll(hide: false)
-//            self.endCrawling()
-//
+            }
+            
+        }
+        
+        func setImage(image: String?) {
+            
+            if let image: String = image {
+                
+                if !image.isEmpty {
+                    
+                    if let source = AlamofireSource(urlString: image) {
+                        
+                        setImage(images: [source])
+                        
+                    } else {
+                        
+//                        self.slideshow?.setImageInputs(placeholderImages)
+                        
+                    }
+                    
+                } else {
+                    
+//                    self.slideshow?.setImageInputs(placeholderImages)
+                    
+                }
+                
+            } else {
+                
+//                self.slideshow?.setImageInputs(placeholderImages)
+                
+            }
+            
+//            self.centerLoadingActivityIndicatorView?.stopAnimating()
+            
+        }
+        
+        func setImage(images: [InputSource]?) {
+            
+            if let images = images {
+                
+//                self.slideshow?.setImageInputs(images)
+                
+            } else {
+                
+//                self.slideshow?.setImageInputs(placeholderImages)
+                
+            }
+            
+//            self.centerLoadingActivityIndicatorView?.stopAnimating()
+            
+        }
+        
+        func setUpSlideshow() {
+            
+//            self.slideshow?.backgroundColor = UIColor.white
+//            self.slideshow?.slideshowInterval = 7.0
+//            self.slideshow?.pageControlPosition = PageControlPosition.hidden
+//            self.slideshow?.contentScaleMode = .scaleAspectFill
+            
         }
         
         if let url = self.slp.extractURL(text: url),
