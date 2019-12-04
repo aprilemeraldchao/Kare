@@ -20,6 +20,7 @@ class QandAViewController: UIViewController, UITableViewDelegate, UITableViewDat
     @IBOutlet weak var commentTextField: UITextView!
     
     @IBOutlet weak var answersTableView: UITableView!
+    @IBOutlet weak var backButton: UIButton!
     
     override func viewDidLoad() {
         questionContainerView.layer.cornerRadius = 10
@@ -34,6 +35,8 @@ class QandAViewController: UIViewController, UITableViewDelegate, UITableViewDat
         commentTextField.layer.cornerRadius = 5
         commentTextField.delegate = self
         commentTextField.text = ""
+                
+        backButton.layer.cornerRadius = 8
         
         let cellNib = UINib(nibName: "AnswerTableViewCell", bundle: nil)
         answersTableView.register(cellNib, forCellReuseIdentifier: "answerCell")
@@ -99,5 +102,9 @@ class QandAViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let cell = answersTableView.dequeueReusableCell(withIdentifier: "answerCell", for: indexPath) as! AnswerTableViewCell
         cell.set(cell: cellContent)
         return cell
+    }
+    
+    @IBAction func backClicked(_ sender: Any) {
+        performSegue(withIdentifier: "qandAToSocialize", sender: self)
     }
 }

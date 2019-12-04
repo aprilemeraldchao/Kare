@@ -7,7 +7,8 @@ target 'KarePOC' do
 
   pod 'Charts'
   pod 'IQKeyboardManagerSwift', '~> 6.5'
-  pod 'SwiftLinkPreview', '~> 3.1.0'
+  pod 'SwiftyDrop', '~> 4.2'
+  pod 'SwiftLinkPreview', '~> 3.1'
 
   # Pods for KarePOC
 

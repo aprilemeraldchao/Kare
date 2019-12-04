@@ -10,13 +10,11 @@ import Foundation
 import Charts
 
 class YAxisWeeklyAnalysisFormatter: IValueFormatter{
-    var feelings = ["🙂","😐","☹️","😖","😭"]
-    
     func stringForValue(_ value: Double, entry: ChartDataEntry, dataSetIndex: Int, viewPortHandler: ViewPortHandler?) -> String {
         if(value == 0){
             return ""
         }
-        return feelings[Int(round(value)) - 1]
+        return DummyData.emojis[Int(round(value)) - 1]
     }
     
     

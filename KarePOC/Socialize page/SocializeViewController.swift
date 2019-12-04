@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import SwiftLinkPreview
 
-class SocializeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, AskQuestionProtocol {
+class SocializeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, AskQuestionProtocol, ArticleProtocol {
     
     @IBOutlet weak var socializeTableView: UITableView!
+    private var result = Response()
+    private let slp = SwiftLinkPreview(cache: InMemoryCache())
     
     override func viewDidLoad() {
         let cellNib = UINib(nibName: "QandATableViewCell", bundle: nil)
@@ -65,9 +68,10 @@ class SocializeViewController: UIViewController, UITableViewDelegate, UITableVie
             cell.cellDelegate = self
             return cell
         default:
-            let cell = socializeTableView.dequeueReusableCell(withIdentifier: "askQuestionCell", for: indexPath) as! AskQuestionTableViewCell
-            cell.set(cell: cellContent as! AskQuestionCell)
-            cell.cellDelegate = self
+            let cell = socializeTableView.dequeueReusableCell(withIdentifier: "articleCell", for: indexPath) as! ArticleTableViewCell
+            let content = cellContent as! ArticleCell
+            content.cellDelegate = self
+            cell.set(cell: content)
             return cell
         }
     }
@@ -80,8 +84,9 @@ class SocializeViewController: UIViewController, UITableViewDelegate, UITableVie
             performSegue(withIdentifier: "socializeToQandA", sender: self)
             break
         case "article":
-            DummyData.curPage = indexPath.row
-            performSegue(withIdentifier: "socializeToArticle", sender: self)
+            let content = cellContent as! ArticleCell
+            content.cellDelegate = self
+            UIApplication.shared.open(URL(string: (content).url)!, options: [:], completionHandler: nil)
             break
         default:
             break
@@ -89,7 +94,11 @@ class SocializeViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     func add(question: QandACell) {
-        DummyData.socials.append(question)
+        DummyData.socials.insert(question,at:1)
+        socializeTableView.reloadData()
+    }
+    
+    func updateArticle() {
         socializeTableView.reloadData()
     }
 }

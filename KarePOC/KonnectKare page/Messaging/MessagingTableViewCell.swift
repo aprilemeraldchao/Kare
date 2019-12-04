@@ -36,12 +36,12 @@ class MessagingTableViewCell: UITableViewCell, UITableViewDelegate, UITableViewD
         
         sendButton.layer.cornerRadius = 8
         
+        textField.delegate = self
+        
         profilePic.layer.cornerRadius = profilePic.frame.width / 2
         profilePic.layer.borderColor = UIColor(named: "KarePink")!.cgColor
         profilePic.layer.borderWidth = 1
-        
-        textField.delegate = self
-        
+                
         let cellNib = UINib(nibName: "LeftMessageTableViewCell", bundle: nil)
         messagingTableView.register(cellNib, forCellReuseIdentifier: "leftMessageCell")
         let cellNib2 = UINib(nibName: "RightMessageTableViewCell", bundle: nil)
@@ -63,6 +63,8 @@ class MessagingTableViewCell: UITableViewCell, UITableViewDelegate, UITableViewD
         doctorNameLabel.text = cell.doctorName
         profilePic.image = cell.profilePic
         messages = cell.messages
+        textField.text = ""
+        
         messagingTableView.reloadData()
     }
     
@@ -76,7 +78,6 @@ class MessagingTableViewCell: UITableViewCell, UITableViewDelegate, UITableViewD
         textField.text = ""
         messagingTableView.reloadData()
         cellDelegate?.updateTable()
-        textField.resignFirstResponder()
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -110,6 +111,6 @@ class MessagingTableViewCell: UITableViewCell, UITableViewDelegate, UITableViewD
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         send()
-        return false
+        return true
     }
 }

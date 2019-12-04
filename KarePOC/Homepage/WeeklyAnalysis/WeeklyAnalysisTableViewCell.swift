@@ -68,32 +68,8 @@ class WeeklyAnalysisTableViewCell: UITableViewCell {
             total += Double(f)
         }
         let avgFeeling = Int(round(total / Double(feelings.count)))
-        var emoji = ""
-        var msg = ""
-        switch(avgFeeling){
-        case 1:
-            emoji = "🙂"
-            msg = "feeling 1 inspirational quote"
-            break
-        case 2:
-            emoji = "😐"
-            msg = "feeling 2 inspirational quote"
-            break
-        case 3:
-            emoji = "☹️"
-            msg = "feeling 3 inspirational quote"
-            break
-        case 4:
-            emoji = "😖"
-            msg = "feeling 4 inspirational quote"
-            break
-        case 5:
-            emoji = "😭"
-            msg = "feeling 5 inspirational quote"
-            break
-        default:
-            break
-        }
+        let emoji = DummyData.emojis[avgFeeling]
+        let msg = DummyData.quotes[avgFeeling]
         avgFeelingLabel.text = "You've been feeling \(emoji) this week. \(msg)"
     }
     
